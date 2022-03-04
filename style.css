@@ -4,13 +4,14 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-body {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
   background: black;
 }
+
 ul {
   position: relative;
   display: flex;
@@ -30,7 +31,7 @@ ul li a {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px grey;
+  -webkit-text-stroke: 1px white;
 }
 ul li a::before {
   content: attr(data-text);
@@ -43,5 +44,5 @@ ul li a::before {
 }
 ul li a:hover::before {
   width: 100%;
-  filter: drop-shadow(0 0 15px var(--clr));
+  filter: drop-shadow(0 0 20px var(--clr));
 }
